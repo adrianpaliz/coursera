@@ -35,18 +35,25 @@ print('I like {1} more than {0}'. format('oranges', 'grapes'))
 '''
 number = input('Please enter a number: ')
 print(number)
-'''
+
 number_1 = input('Please enter the first number: ')
 number_2 = input('Please enter a second number: ')
 print(number_1, number_2)
-
+'''
 # We can do arithmetic operations
+'''
 print(number_1 + number_2) # Adding strings
 print(int(number_1) + int(number_2)) # Adding integers
-
+'''
 # Checking the data type
-print(type(number_1))
+#print(type(number_1))
 
+# String concatenation
+string_1 = input('Please enter your first name: ')
+string_2 = input('Please enter your second name: ')
 
+#print('Imanalla ' + string_1 + ' ' + string_2)
 
+# String replacement
+print('Imanalla {} {}'.format(string_1, string_2))
 
