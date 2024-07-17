@@ -5,7 +5,7 @@ if current:
     current = False
     print('Turning light off')
 
-if not current:
+else:
     current = True
     print('Turning light on')
 
