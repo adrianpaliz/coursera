@@ -1,11 +1,19 @@
-# A list of tuples
-employee_list = [(12345, 'Pedro', 'Kitchen'), (12458, 'Carlos', 'House Floor')]
+# Using a dictionary
+employee_dictionary = {
+    12345: {
+        'id' : '12345',
+        'name' : 'Pedro',
+        'department' : 'Kitchen'
+    },
+    12458: {
+        'id' : '12458',
+        'name' : 'Carlos',
+        'department' : 'House Floor'
+    }
+}
 
-def get_employee(id):
-    for employee in employee_list:
-        if employee[0] == id:
-            return {'id' : employee[0], 'name' : employee[1], 'department' : employee[2]}
+def get_employee_from_dictionary(id):
+    return employee_dictionary[id]
 
-print(get_employee(12458))
-
+print(get_employee_from_dictionary(12458))
 
