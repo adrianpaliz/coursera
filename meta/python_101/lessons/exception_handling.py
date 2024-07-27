@@ -11,7 +11,7 @@ def divide_by(a, b):
 
 try:
     ans = divide_by(40, 0)
-except:
-    print("Something went wrong!")
-
+except Exception as error:
+    print("Something went wrong!", error)
+    print(error.__class__)
 
