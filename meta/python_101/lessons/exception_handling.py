@@ -11,7 +11,8 @@ def divide_by(a, b):
 
 try:
     ans = divide_by(40, 0)
+except ZeroDivisionError as error:
+    print(error, 'we cannot divide by zero')
 except Exception as error:
-    print("Something went wrong!", error)
-    print(error.__class__)
+    print(error, 'something went wrong')
 
