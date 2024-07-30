@@ -16,6 +16,6 @@ def find_number_log(target):
             right = middle - 1
         else:
             left = middle + 1
-
+    return - 1
 print(find_number_log(97))
 
