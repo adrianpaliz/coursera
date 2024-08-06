@@ -1,5 +1,8 @@
 # Recursive function for Tower of Hanoi
+
+# Function definition
 def tower_of_hanoi(disks, source, helper, destination):
+    
     # Base condition
     if disks == 1:
         print('Disk {} moves from tower {} to tower {}.'.format(disks, source, destination))
@@ -15,4 +18,3 @@ disks = int(input('Number of disks to be displaced: '))
 
 # Actual function call
 tower_of_hanoi(disks, 'source', 'helper', 'destination')
-        
