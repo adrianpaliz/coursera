@@ -56,6 +56,26 @@ num_dict = {number : number ** 2 for number in numbers}
 print('Using one input list to create a dict: ', num_dict)
 '''
 # Using two input lists
+'''
 days_dict = {key : value for (key, value) in zip(numbers, days)}
 print('Using two lists: ', days_dict)
+'''
+
+# Set comprehension
+# Very similar to list comprehension, the difference is the use of curly brackets for sets instead of square brackets
+'''
+set_a = {number for number in range(10, 20) if number not in [11, 15, 19]}
+print('Numbers in range 10 to 20, without 11, 15, 19: ', set_a)
+'''
+
+# Generator comprehension
+# Very similar to list
+# With the variation of using curved brackets instead of square brackets
+# More memory efficent as compared to list comprehension
+numbers = [2, 3, 5, 7, 11, 13, 17, 19, 23, 29]
+gen_obj = (number for number in numbers)
+print(gen_obj)
+print(type(gen_obj))
+for items in gen_obj:
+    print(items, end = ' ')
 
