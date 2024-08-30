@@ -9,15 +9,15 @@ class MyFirstClass:
 
     # Define a function called hand_list
     # Pass the parameter self to it. and two parameters
-    def hand_list(self, philosopher, book):     
+    def hand_list(self, philosopher, book, year):     
         # Write a print statement 
         # and pass the class variable by accessing it
         print(MyFirstClass.index)
         # Write a print statement using built-in concatenation operator
-        print(philosopher + ' wrote the book: ' + book)
+        print(philosopher + ' wrote the book: ' + book + ' in the year ' + year)
 
 # Create and instantiate an object of the class
 whodunnit = MyFirstClass()
 # Call method hand_list() over this object 'whodunnit' and pass two values to it
-whodunnit.hand_list('Sun Tzu', 'The Art of War')
+whodunnit.hand_list('Sun Tzu', 'The Art of War', '5th century BC')
 
