@@ -7,13 +7,13 @@ class MyClass:
         print('Hello, world!')
 
 # Creating a new instance
-myclass = MyClass()
+my_class = MyClass()
 
 # Ferering to the class object
 print(MyClass.a)
 
 # Refering to the instance object
-print(myclass.a)
+print(my_class.a)
 
-print(myclass.hello())
+print(my_class.hello())
 
