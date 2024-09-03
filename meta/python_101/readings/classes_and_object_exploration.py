@@ -25,13 +25,14 @@ class Video:
         print('---------Inside class B---------')
         self.minutes = minutes
     # Calling method progress() over object of class Audio
+    # This prints the address of the object instead of the contents
     print(audio.progress())
     frames = 5
     print(frames)
     print(audio)
 
 print('Instantiating Video...')
-# instantiating object audio over class Video
+# Instantiating object audio over class Video
 video = Video(audio)
 print(audio)
 
